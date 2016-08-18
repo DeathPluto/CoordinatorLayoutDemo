@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.halcyon.coordinatorlayoutdemo.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:background="#24f7fc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:padding="40dp"
+           app:layout_scrollFlags="scroll|enterAlways"
+           android:gravity="center"
+           android:minHeight="200dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:src="@mipmap/ic_launcher"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <ImageView
+               android:layout_marginLeft="20dp"
+               android:src="@mipmap/ic_launcher"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <ImageView
+               android:layout_marginLeft="20dp"
+               android:src="@mipmap/ic_launcher"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <ImageView
+               android:layout_marginLeft="20dp"
+               android:src="@mipmap/ic_launcher"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
